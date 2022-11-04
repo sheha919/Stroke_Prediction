@@ -2,6 +2,7 @@
 Author : Shehani Wetthasinghe
 
 ![image](https://user-images.githubusercontent.com/50593017/200030044-6d5a4985-db9a-430a-bb79-5007dc8ba86a.png)
+Source : https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
 ## Overview
 According to the World Health Organization (WHO) stroke is the 2nd leading cause of death in the world. The goal of this study is to predict the chance of having a stroke based on following features;
