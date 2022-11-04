@@ -1,1 +1,1 @@
-# Heart_Faliure_Prediction
+# Stroke_Prediction
