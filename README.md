@@ -57,15 +57,34 @@ The following heatmap shows how the features correlate each other.
 
 - According to the above grid of bar charts;
 
- - Male and female patients have almost similar mean age, glucose levels and BMI
- - For adult patients, the BMI and glucose levels do not depend on the job type. (Never worked patients can be consider as teenagers, thus not catergorized as adults)
- - Seems like average glucose and BMI do not vary on the smoking status much.
- - Patients with hypertension and heart disease are also suffering from obesity and prediabetes or diabates.
+  - Male and female patients have almost similar mean age, glucose levels and BMI
+  - For adult patients, the BMI and glucose levels do not depend on the job type. (Never worked patients can be consider as teenagers, thus not catergorized as adults)
+  - Seems like average glucose and BMI do not vary on the smoking status much.
+  - Patients with hypertension and heart disease are also suffering from obesity and prediabetes or diabates.
 
 - According to CDC;
   - Diabetes: above 126 mg/dL
   - Prediabetes: 100 – 125 mg/dL
   - Normal: Below 99 mg/dL
-  - 
+ 
 (source: https://www.cdc.gov/diabetes/basics/getting-tested.html#:~:text=Fasting%20Blood%20Sugar%20Test&text=A%20fasting%20blood%20sugar%20level,higher%20indicates%20you%20have%20diabetes.)
 
+**Model Performences**
+- Performence of optimized logistic regression model
+![image](https://user-images.githubusercontent.com/50593017/202756102-13ec4ad0-bde4-4c25-9e8a-d0a3c0d788a2.png)
+
+- Performence of optimized KNN model
+![image](https://user-images.githubusercontent.com/50593017/202756215-b4f824fa-a7e7-4bd5-b41e-c4df294846d9.png)
+
+- Performence of optimized random forest model
+![image](https://user-images.githubusercontent.com/50593017/202756350-2e748852-eac7-4af5-bc53-367af7539f06.png)
+
+- The Summary
+
+|Model|Precision|Recall|F1 Score|Accuracy|
+|---|---|---|---|---|
+|Logistic Regression|0\.131|0\.806|0\.225|0\.73|
+|KNN|0\.075|0\.242|0\.115|0\.818|
+
+- Even though, the highest accuracy is co,img from the optimized random forest model, here we are trying to maximize recall score to minimize the rist on patietns.
+|Random Forest|0\.129|0\.145|0\.136|0\.911|
