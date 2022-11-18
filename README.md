@@ -52,3 +52,20 @@ The following heatmap shows how the features correlate each other.
 
 - Most of the underweight patients fall under 20 years
 - The majority of patients suffer from obesity are in between 20 and 60 years of age.
+
+![image](https://user-images.githubusercontent.com/50593017/202755071-3dcb0f7c-3738-434a-91ea-8cc803df457c.png)
+
+- According to the above grid of bar charts;
+
+ - Male and female patients have almost similar mean age, glucose levels and BMI
+ - For adult patients, the BMI and glucose levels do not depend on the job type. (Never worked patients can be consider as teenagers, thus not catergorized as adults)
+ - Seems like average glucose and BMI do not vary on the smoking status much.
+ - Patients with hypertension and heart disease are also suffering from obesity and prediabetes or diabates.
+
+- According to CDC;
+  - Diabetes: above 126 mg/dL
+  - Prediabetes: 100 – 125 mg/dL
+  - Normal: Below 99 mg/dL
+  - 
+(source: https://www.cdc.gov/diabetes/basics/getting-tested.html#:~:text=Fasting%20Blood%20Sugar%20Test&text=A%20fasting%20blood%20sugar%20level,higher%20indicates%20you%20have%20diabetes.)
+
