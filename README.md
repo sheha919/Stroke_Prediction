@@ -85,6 +85,6 @@ The following heatmap shows how the features correlate each other.
 |---|---|---|---|---|
 |Logistic Regression|0\.131|0\.806|0\.225|0\.73|
 |KNN|0\.075|0\.242|0\.115|0\.818|
+|Random Forest|0\.129|0\.145|0\.136|0\.911|
 
 - Even though, the highest accuracy is co,img from the optimized random forest model, here we are trying to maximize recall score to minimize the rist on patietns.
-|Random Forest|0\.129|0\.145|0\.136|0\.911|
