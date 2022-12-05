@@ -72,6 +72,11 @@ The following heatmap shows how the features correlate each other.
 
 # The Summary
 
+**Performence of pre-optimized Models**
+![image](https://user-images.githubusercontent.com/50593017/205737738-6e034c27-c22b-4d32-8d9e-0588f4a5a334.png)
+
+**Comparison between pre and post optimized Models**
+
 |Model|Precision\_train|Recall\_train|F1 Score\_train|Accuracy\_train|ROC AUC Score\_train|Precision\_test|Recall\_test|F1 Score\_test|Accuracy\_test|ROC AUC Score\_test|
 |---|---|---|---|---|---|---|---|---|---|---|
 |Logistic Regression|0\.139|0\.786|0\.236|0\.751|0\.846|0\.128|0\.758|0\.22|0\.739|0\.84|
@@ -83,10 +88,6 @@ The following heatmap shows how the features correlate each other.
 |XGBoost|0\.209|0\.904|0\.339|0\.828|0\.94|0\.128|0\.597|0\.211|0\.783|0\.779|
 |Optimized XGBoost|0\.22|0\.882|0\.353|0\.842|0\.932|0\.135|0\.613|0\.222|0\.791|0\.788|
 
-**Model Performences**
-- Comparison between pre and post optimized Models
-
-![image](https://user-images.githubusercontent.com/50593017/205737738-6e034c27-c22b-4d32-8d9e-0588f4a5a334.png)
 
 ![image](https://user-images.githubusercontent.com/50593017/205737955-9bf9e48d-2086-45c5-a582-d0fd594178f2.png)
 
