@@ -69,22 +69,30 @@ The following heatmap shows how the features correlate each other.
  
 (source: https://www.cdc.gov/diabetes/basics/getting-tested.html#:~:text=Fasting%20Blood%20Sugar%20Test&text=A%20fasting%20blood%20sugar%20level,higher%20indicates%20you%20have%20diabetes.)
 
+
+# The Summary
+
+|Model|Precision\_train|Recall\_train|F1 Score\_train|Accuracy\_train|ROC AUC Score\_train|Precision\_test|Recall\_test|F1 Score\_test|Accuracy\_test|ROC AUC Score\_test|
+|---|---|---|---|---|---|---|---|---|---|---|
+|Logistic Regression|0\.139|0\.786|0\.236|0\.751|0\.846|0\.128|0\.758|0\.22|0\.739|0\.84|
+|Optimized Logistic Regression|0\.138|0\.797|0\.236|0\.748|0\.846|0\.131|0\.806|0\.225|0\.73|0\.841|
+|KNN|0\.3|1\.0|0\.462|0\.886|0\.997|0\.076|0\.29|0\.12|0\.793|0\.635|
+|Optimized KNN|0\.336|1\.0|0\.503|0\.903|0\.997|0\.075|0\.242|0\.115|0\.818|0\.614|
+|Random Forest|1\.0|1\.0|1\.0|1\.0|1\.0|0\.089|0\.161|0\.115|0\.879|0\.749|
+|Optimized Random Forest|1\.0|1\.0|1\.0|1\.0|1\.0|0\.074|0\.081|0\.077|0\.906|0\.755|
+|XGBoost|0\.209|0\.904|0\.339|0\.828|0\.94|0\.128|0\.597|0\.211|0\.783|0\.779|
+|Optimized XGBoost|0\.22|0\.882|0\.353|0\.842|0\.932|0\.135|0\.613|0\.222|0\.791|0\.788|
+
 **Model Performences**
-- Performence of optimized logistic regression model
-![image](https://user-images.githubusercontent.com/50593017/202756102-13ec4ad0-bde4-4c25-9e8a-d0a3c0d788a2.png)
+- Comparison between pre and post optimized Models
 
-- Performence of optimized KNN model
-![image](https://user-images.githubusercontent.com/50593017/202756215-b4f824fa-a7e7-4bd5-b41e-c4df294846d9.png)
+![image](https://user-images.githubusercontent.com/50593017/205737738-6e034c27-c22b-4d32-8d9e-0588f4a5a334.png)
 
-- Performence of optimized random forest model
-![image](https://user-images.githubusercontent.com/50593017/202756350-2e748852-eac7-4af5-bc53-367af7539f06.png)
+![image](https://user-images.githubusercontent.com/50593017/205737955-9bf9e48d-2086-45c5-a582-d0fd594178f2.png)
 
-- The Summary
 
-|Model|Precision|Recall|F1 Score|Accuracy|
-|---|---|---|---|---|
-|Logistic Regression|0\.131|0\.806|0\.225|0\.73|
-|KNN|0\.075|0\.242|0\.115|0\.818|
-|Random Forest|0\.129|0\.145|0\.136|0\.911|
-
-- Even though, the highest accuracy is co,img from the optimized random forest model, here we are trying to maximize recall score to minimize the rist on patietns.
+- Out of the 4 models, the optimized logistic regression model can be selected as best model according to the recall score and ROC score.
+- Especially in this project, we are trying to maximize recall score to minimize the risk on patietns.
+- The logistic regression models are the ones identified as the minimal overfitting models because their training scores are approximately similar with testing scores.
+- The optimized logitic regression model not only gained the highest testing recall score, it also performed very well on testing data over training data according to the recall score.
+- Therefore, optimized logistic regression model is the best model to predict the risk of stoke of patients.
