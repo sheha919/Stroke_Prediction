@@ -90,6 +90,8 @@ The following heatmap shows how the features correlate each other.
 
 ![image](https://user-images.githubusercontent.com/50593017/205737955-9bf9e48d-2086-45c5-a582-d0fd594178f2.png)
 
+![image](https://user-images.githubusercontent.com/50593017/205738602-2b249122-f3d4-4092-957d-14c2ee692a11.png)
+
 
 - Out of the 4 models, the optimized logistic regression model can be selected as best model according to the recall score and ROC score.
 - Especially in this project, we are trying to maximize recall score to minimize the risk on patietns.
