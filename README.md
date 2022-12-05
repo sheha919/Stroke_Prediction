@@ -1,6 +1,6 @@
 # Stroke_Prediction
 - Author : Shehani Wetthasinghe
-- Last modified: 11/18/2022
+- Last modified: 12/05/2022
 
 ![image](https://user-images.githubusercontent.com/50593017/200030044-6d5a4985-db9a-430a-bb79-5007dc8ba86a.png)
 Source : https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
