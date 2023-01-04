@@ -30,11 +30,20 @@ According to CDC;
 | Smoking Status        | TFormerly smoked/Never smoked/Smokes                                   |
 | Stroke (Target)       | Yes(1) / No(0)                                                         |
 
+In the original dataset;
+- contains 5110 rows and 11 columns
+- 11 columns = 10 input features + 1 target variable
+- From the total number of patients;
+	- ~95% detected as negative for brain stroke (normal)
+	- ~5% detected as positive for brain stroke (stroke)
+
+
+
 ## Distribution of Key features
 
 ![image](https://user-images.githubusercontent.com/50593017/210614781-cac05f56-8c65-4ede-942d-3a71fd4c8a3b.png)
 - Patients who got positive for brain stroke is approximately above 30 years old 
--The risk of having a stroke is increasing with age
+- The risk of having a stroke is increasing with age
 
 According to the CDC, patients can be categorized as;
 
@@ -56,21 +65,21 @@ According to CDC the average glucose in blood can be catergorized into;
 
 ![image](https://user-images.githubusercontent.com/50593017/210614895-09a7a8aa-45c9-489d-a066-3134afb7bece.png)
 
-According this plot, the risk of having a stroke is not much dependent on the average glucose level in blood
+According the above plot, the risk of having a stroke is not much dependent on the average glucose level in blood
 
 ## Correlations between key feartures
 
 ![image](https://user-images.githubusercontent.com/50593017/210616427-8fd95cd8-bc77-4c90-81ac-a34e559ea48c.png)
 
 - There is a high risk on the people above **~45 years** who suffering from **diabetes** to have a brain stroke
-- There is a higher risk on the people above **~ 45 years** who suffering from **overweight** to have a brain stroke
+- There is a higher risk on the people above **~45 years** who suffering from **overweight** to have a brain stroke
 
 ## Machine Learning Models
  Here, I used classification ML models such as;
- 	- Logistic Regression
-	- K-Nearest Neighbor
-	- Random Forest
-	- XG Boost
+ - Logistic Regression
+ - K-Nearest Neighbor
+ - Random Forest
+ - XG Boost
   
 ### Developments
 - Reduce the number of features using PCA
@@ -86,7 +95,7 @@ NOTE: In this problem, the number of false negatives required to minimize to red
 - For all tested models, the best recall score obtained when they are incorporated with both PCA and SMOTE. 
 - Therefore, I optimized the paramaters of those models to enhance the performence further.
 
-**Comparison between pre and post optimized Models**
+### Comparison between pre and post optimized Models
 
 |Model|Precision\_train|Recall\_train|F1 Score\_train|Accuracy\_train|ROC AUC Score\_train|Precision\_test|Recall\_test|F1 Score\_test|Accuracy\_test|ROC AUC Score\_test|
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -103,7 +112,6 @@ NOTE: In this problem, the number of false negatives required to minimize to red
 ![image](https://user-images.githubusercontent.com/50593017/210632619-467eb64d-048e-42ff-b0a5-c5a3498530f4.png)
 
 ![image](https://user-images.githubusercontent.com/50593017/210632669-bdfa0548-709f-4185-a11a-d040f8844d11.png)
-![image](https://user-images.githubusercontent.com/50593017/210637633-de4697f9-9509-44fb-b481-362ab6d83c5e.png)
 
 
 ## Conclusions
