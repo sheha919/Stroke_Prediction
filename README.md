@@ -1,18 +1,20 @@
 # Stroke_Prediction
 - Author : Shehani Wetthasinghe
-- Last modified: 12/05/2022
+- Last modified: 01/04/2023
 
 ![image](https://user-images.githubusercontent.com/50593017/200030044-6d5a4985-db9a-430a-bb79-5007dc8ba86a.png)
 Source : https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+
+## The goal of the project
+
+To predict the chance of having a stroke based on common risk factors using machine learning techniques.
 
 ## Overview
 According to CDC;
 
 “A stroke, sometimes called a brain attack, occurs when something blocks blood supply to part of the brain or when a blood vessel in the brain bursts. In either case, parts of the brain become damaged or die. A stroke can cause lasting brain damage, long-term disability, or even death.”
 
-## The goal of the project
-
-To predict the chance of having a stroke based on common risk factors using machine learning techniques.
+## Data Features
 
 | Feature               | Description                                                            |
 | -------------         |------------------------------------------------------------------------|
@@ -63,18 +65,26 @@ According this plot, the risk of having a stroke is not much dependent on the av
 - There is a high risk on the people above **~45 years** who suffering from **diabetes** to have a brain stroke
 - There is a higher risk on the people above **~ 45 years** who suffering from **overweight** to have a brain stroke
 
+## Machine Learning Models
+ Here, I used classification ML models such as;
+ 	- Logistic Regression
+	- K-Nearest Neighbor
+	- Random Forest
+	- XG Boost
+  
+### Developments
+- Reduce the number of features using PCA
+- Synthetically generated new data to balance the dataset using SMOTE 
+- Optimize the default parameters of the models
 
+NOTE: In this problem, the number of false negatives required to minimize to reduce the risk on the patient. Therefore, the recall score is the most important metric.
 
+### Performence of pre-optimized Models
 
+![image](https://user-images.githubusercontent.com/50593017/210631762-a91c8a5c-912d-41f7-b457-550a79f46d96.png)
 
-
-
-
-# The Summary
-
-**Performence of pre-optimized Models**
-
-![image](https://user-images.githubusercontent.com/50593017/205737738-6e034c27-c22b-4d32-8d9e-0588f4a5a334.png)
+- For all tested models, the best recall score obtained when they are incorporated with both PCA and SMOTE. 
+- Therefore, I optimized the paramaters of those models to enhance the performence further.
 
 **Comparison between pre and post optimized Models**
 
@@ -90,13 +100,23 @@ According this plot, the risk of having a stroke is not much dependent on the av
 |Optimized XGBoost|0\.22|0\.882|0\.353|0\.842|0\.932|0\.135|0\.613|0\.222|0\.791|0\.788|
 
 
-![image](https://user-images.githubusercontent.com/50593017/205737955-9bf9e48d-2086-45c5-a582-d0fd594178f2.png)
+![image](https://user-images.githubusercontent.com/50593017/210632619-467eb64d-048e-42ff-b0a5-c5a3498530f4.png)
 
-![image](https://user-images.githubusercontent.com/50593017/205738602-2b249122-f3d4-4092-957d-14c2ee692a11.png)
+![image](https://user-images.githubusercontent.com/50593017/210632669-bdfa0548-709f-4185-a11a-d040f8844d11.png)
+![image](https://user-images.githubusercontent.com/50593017/210637633-de4697f9-9509-44fb-b481-362ab6d83c5e.png)
 
 
+## Conclusions
 - Out of the 4 models, the optimized logistic regression model can be selected as best model according to the recall score and ROC score.
 - Especially in this project, we are trying to maximize recall score to minimize the risk on patietns.
 - The logistic regression models are the ones identified as the minimal overfitting models because their training scores are approximately similar with testing scores.
 - The optimized logitic regression model not only gained the highest testing recall score, it also performed very well on testing data over training data according to the recall score.
 - Therefore, optimized logistic regression model is the best model to predict the risk of stoke of patients.
+
+## Recomendations
+- As per the findings of this project, the optimized Logistic Regression Model can be used as an early detection of brain stroke and direct to the treatments 
+- This model is developed to minimize the inaccurate predictions which may increase the severeness of the brain strokes
+- The risk of have a brain stroke is increasing with age, BMI and average glucose level in blood
+- Therefore, it is recommended to keep track on your glucose level in blood and BMI when you are getting older.
+
+
