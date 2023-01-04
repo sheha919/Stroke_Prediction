@@ -28,52 +28,46 @@ To predict the chance of having a stroke based on common risk factors using mach
 | Smoking Status        | TFormerly smoked/Never smoked/Smokes                                   |
 | Stroke (Target)       | Yes(1) / No(0)                                                         |
 
-Below histrogams illustrate the distribution of each feature with its mean and median values.
-According to them, not any of features showing outliers.
+## Distribution of Key features
 
-![image](https://user-images.githubusercontent.com/50593017/202753632-0dc3c07c-5885-4b81-9cce-7ea54a3b40b3.png)
-![image](https://user-images.githubusercontent.com/50593017/202753661-564c96be-7cea-4ac9-b351-664bf6e6c4ec.png)
-![image](https://user-images.githubusercontent.com/50593017/202753679-e8fe6881-2064-402a-8d6d-f486f69c4d23.png)
-![image](https://user-images.githubusercontent.com/50593017/202753697-ca229645-cbf2-40c3-a9ab-6edc3ea2c9ff.png)
-![image](https://user-images.githubusercontent.com/50593017/202753720-3e2ad6ed-6ef1-4f51-a1ec-f8d5f0a392c0.png)
-![image](https://user-images.githubusercontent.com/50593017/202753756-6120676d-6bd2-47cb-893c-a9ea1ccd839d.png)
+![image](https://user-images.githubusercontent.com/50593017/210614781-cac05f56-8c65-4ede-942d-3a71fd4c8a3b.png)
+- Patients who got positive for brain stroke is approximately above 30 years old 
+-The risk of having a stroke is increasing with age
+
+According to the CDC, patients can be categorized as;
+
+- BMI is less than 18.5: Underweight range
+- BMI is 18.5 to 24.9: Healthy Weight range
+- BMI is 25.0 to 29.9: Overweight range
+- BMI is 30.0 or higher: Obese range
+
+![image](https://user-images.githubusercontent.com/50593017/210614816-f7b6e298-110c-4dc0-9b9c-694c85e32269.png)
+
+- There is a risk of having a stroke if the BMI beyond the **overweight range**
+- But there is also a chance of having a stroke even your BMI falls in **healthy weight range**
+
+According to CDC the average glucose in blood can be catergorized into;
+
+- Diabetes: 		above 126 mg/dL
+- Prediabetes: 	100 – 125 mg/dL
+- Normal: 		Below 99 mg/dL
+
+![image](https://user-images.githubusercontent.com/50593017/210614895-09a7a8aa-45c9-489d-a066-3134afb7bece.png)
+
+According this plot, the risk of having a stroke is not much dependent on the average glucose level in blood
+
+## Correlations between key feartures
+
+![image](https://user-images.githubusercontent.com/50593017/210616427-8fd95cd8-bc77-4c90-81ac-a34e559ea48c.png)
+
+- There is a high risk on the people above **~45 years** who suffering from **diabetes** to have a brain stroke
+- There is a higher risk on the people above **~ 45 years** who suffering from **overweight** to have a brain stroke
 
 
-The following heatmap shows how the features correlate each other.
-  - The highest correlation shows between age and BMI which is 0.33
-  - The lowest correlation shows between BMI and having a heart disease or not
-![image](https://user-images.githubusercontent.com/50593017/202748908-dc8f9cf0-d35d-46ad-8457-2f30208627ab.png)
 
-![image](https://user-images.githubusercontent.com/50593017/202754577-f36c6e50-a83b-4552-8745-7c5d4b4820d1.png)
 
-- Most of the patients have average glucose level below ~ 140. But the patients with higher than 140 are increasing with as the age increment.
-- Everyone with stroke fall above the age of 40 years.
-- Most of patients are below the ~ 50 level of BMI.
-- According to the CDC, patients can be catergorized as;
-  - BMI is less than 18.5: Underweight range
-  - BMI is 18.5 to 24.9: Healthy Weight range
-  - BMI is 25.0 to 29.9: Overweight range
-  - BMI is 30.0 or higher: Obese range
-(source: https://www.cdc.gov/healthyweight/assessing/index.html)
 
-- Most of the underweight patients fall under 20 years
-- The majority of patients suffer from obesity are in between 20 and 60 years of age.
 
-![image](https://user-images.githubusercontent.com/50593017/202755071-3dcb0f7c-3738-434a-91ea-8cc803df457c.png)
-
-- According to the above grid of bar charts;
-
-  - Male and female patients have almost similar mean age, glucose levels and BMI
-  - For adult patients, the BMI and glucose levels do not depend on the job type. (Never worked patients can be consider as teenagers, thus not catergorized as adults)
-  - Seems like average glucose and BMI do not vary on the smoking status much.
-  - Patients with hypertension and heart disease are also suffering from obesity and prediabetes or diabates.
-
-- According to CDC;
-  - Diabetes: above 126 mg/dL
-  - Prediabetes: 100 – 125 mg/dL
-  - Normal: Below 99 mg/dL
- 
-(source: https://www.cdc.gov/diabetes/basics/getting-tested.html#:~:text=Fasting%20Blood%20Sugar%20Test&text=A%20fasting%20blood%20sugar%20level,higher%20indicates%20you%20have%20diabetes.)
 
 
 # The Summary
