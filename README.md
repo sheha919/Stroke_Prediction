@@ -6,7 +6,15 @@
 Source : https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
 ## Overview
-According to the World Health Organization (WHO) stroke is the 2nd leading cause of death in the world. The goal of this study is to predict the chance of having a stroke based on following features;
+According to CDC;
+
+“A stroke, sometimes called a brain attack, occurs when something blocks blood supply to part of the brain or when a blood vessel in the brain bursts. In either case, parts of the brain become damaged or die. A stroke can cause lasting brain damage, long-term disability, or even death.”
+
+## The goal of the project
+
+To predict the chance of having a stroke based on common risk factors using machine learning techniques.
+
+
 
 1. gender: "Male", "Female" or "Other"
 2. age: age of the patient
